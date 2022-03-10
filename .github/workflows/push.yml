@@ -15,7 +15,12 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x     
+          node-version: 12.x    
+      - name: write .env file
+        run: 'echo "MONGODB_URI=$MONGODB_URI" > .env'
+        shell: bash
+        env:
+          MONGODB_URI: ${{secrets.MONGODB_URI}} 
       - name: Install Depedency
         run: npm install
       - name: Ziping

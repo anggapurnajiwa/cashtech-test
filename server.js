@@ -23,19 +23,7 @@ const resources = require('./services/resources.js')
 const init = async () => {
     const server = Hapi.server({
         port: 3000,
-        host: 'localhost',  
-        routes: {
-            validate: {
-              failAction: async (request, h, err) => {
-                if(process.env.ENVIRONTMENT === 'development') {                    
-                    throw err;                    
-                } else {
-                    const source = err.output.payload.validation?.source                    
-                    throw Boom.badRequest(`Invalid request ${source} input`);
-                }                            
-              }
-            }
-        }      
+        host: 'localhost',           
     })
 
     // Init Database
