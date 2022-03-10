@@ -8,6 +8,13 @@ const dayjs = require('dayjs')
 module.exports = [
     {
         method: 'GET',
+        path: '/',
+        handler: async (req) => {
+            return "Hello CashTech";
+        },       
+    },
+    {
+        method: 'GET',
         path: '/merchant/simulate-signature',
         handler: async (req) => {
             //0xeF236f1b35B2105836540c23d055d1BFb6c5db52
