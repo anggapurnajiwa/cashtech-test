@@ -24,7 +24,7 @@ jobs:
       - name: Install Depedency
         run: npm install
       - name: Ziping
-        run: rm -rf build && mkdir build && zip -r build/cashtech.zip *
+        run: rm -rf build && mkdir build && zip -r build/cashtech.zip .
       # Deploy to the S3 server
       - name: Deploy to S3
         uses: jakejarvis/s3-sync-action@master
