@@ -15,7 +15,7 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x    
+          node-version: 14.x
       - name: write .env file
         run: 'echo "MONGODB_URI=$MONGODB_URI" > .env'
         shell: bash
@@ -24,7 +24,7 @@ jobs:
       - name: Install Depedency
         run: npm install
       - name: Ziping
-        run: rm -rf build && mkdir build && zip -r build/cashtech.zip .
+        run: rm -rf build && mkdir build && rm -rf .git && zip -r build/cashtech.zip .
       # Deploy to the S3 server
       - name: Deploy to S3
         uses: jakejarvis/s3-sync-action@master
