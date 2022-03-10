@@ -1,10 +1,7 @@
 {
-  "name": "Hapi-Mongoose-Boilerplate",
+  "name": "cashtech",
   "version": "1.1.0",
   "description": "Hapi-Mongoose Boilerplate by Guillaume Duhan, 2019.",
-  "name": "Hapi-Boilerplate",
-  "version": "1.0.0",
-  "description": "Hapi boilerplate by Guillaume Duhan, 2019.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,15 +11,25 @@
   "author": "Guillaume Duhan",
   "license": "MIT",
   "dependencies": {
+    "@hapi/basic": "^6.0.0",
+    "@hapi/boom": "^9.1.4",
     "@hapi/hapi": "^18.4.0",
-    "bcrypt": "^3.0.6",
+    "@hapi/inert": "^5.2.2",
+    "@hapi/joi": "^16.1.8",
+    "bcrypt": "^3.0.8",
     "chalk": "^2.4.2",
     "crypto": "^1.0.1",
+    "dayjs": "^1.10.8",
     "dotenv": "^8.1.0",
     "eslint-config-airbnb": "^18.0.1",
+    "ethers": "^5.5.4",
+    "hapi-lambda": "^1.0.0",
+    "hapi-swagger": "^11.1.0",
     "laabr": "^5.1.2",
     "mongoose": "^5.7.5",
     "morgan": "^1.9.1",
-    "nodemon": "^1.19.3"
+    "nodemon": "^1.19.3",
+    "rand-token": "^1.0.1",
+    "vision": "github:hapijs/vision#v5.4.4"
   }
 }

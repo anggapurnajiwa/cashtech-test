@@ -1,6 +1,7 @@
 const routes = [].concat(
   require('../routes/404'),
-  require('../routes/user')
+  require('../routes/user'),
+  require('../routes/merchant')
 )
 
 module.exports = {
