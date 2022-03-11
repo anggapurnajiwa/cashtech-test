@@ -26,7 +26,7 @@
     "hapi-lambda": "^1.0.0",
     "hapi-swagger": "^11.1.0",
     "laabr": "^5.1.2",
-    "mongoose": "^5.7.5",
+    "mongoose": "^5.11.15",
     "morgan": "^1.9.1",
     "nodemon": "^1.19.3",
     "rand-token": "^1.0.1",
